@@ -82,6 +82,13 @@ header {
             padding: 10px;
             text-align: center;
             margin: 20px 0;
+            transition: box-shadow .5s ease;
+            a {
+                color: white;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
             button {
                 background-color: white;
                 color: black;
@@ -90,6 +97,10 @@ header {
                 font-size: 23px;
                 font-weight: 500;
                 padding: 10px;
+            }
+            &:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                transition: all .5s ease;
             }
         }
     }
@@ -204,6 +215,31 @@ header {
             }
         }
     }
+    .carousel-indicators {
+        margin-bottom: 0;
+    }
+    .obtener_credito {
+        form {
+            width: 50%;
+            margin: 0 auto;
+            display: table;
+            .value_block {
+                margin: 20px 0;
+                input#price_depa {
+                    border: none;
+                    border-bottom: 1px solid #0871B8;
+                    color: #0871B8;
+                    width: 70%;
+                }
+                .btn-group {
+                    display: flex;
+                    label {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #programar_cita {
@@ -281,6 +317,11 @@ header {
                 margin: 0 5px;
             }
         }
+        .obtener_credito {
+            form {
+                width: 70%;
+            }
+        }
     }
 }
 
@@ -322,6 +363,11 @@ header {
             i {
                 font-size: 40px;
                 margin: 0 5px;
+            }
+        }
+        .obtener_credito {
+            form {
+                width: 100%;
             }
         }
     }
