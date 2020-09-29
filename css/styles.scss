@@ -220,16 +220,25 @@ header {
     }
     .obtener_credito {
         form {
-            width: 50%;
+            width: 55%;
             margin: 0 auto;
             display: table;
             .value_block {
                 margin: 20px 0;
-                input#price_depa {
+                label {
+                    width: 100%;
+                }
+                label.tandc {
+                    width: auto;
+                }
+                input[type='text'] {
                     border: none;
                     border-bottom: 1px solid #0871B8;
                     color: #0871B8;
                     width: 70%;
+                }
+                span {
+                    color: #0071BC;
                 }
                 .btn-group {
                     display: flex;
@@ -237,7 +246,21 @@ header {
                         margin: 0 10px;
                     }
                 }
+                .tasas {
+                    input {
+                        margin: 20px auto;
+                        display: table;
+                    }
+                    label {
+                        color: #0071BC;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
             }
+        }
+        form.w-90 {
+            width: 90%;
         }
     }
 }

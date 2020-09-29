@@ -153,20 +153,35 @@ header nav.absolute {
 .content .carousel-indicators {
   margin-bottom: 0; }
 .content .obtener_credito form {
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   display: table; }
   .content .obtener_credito form .value_block {
     margin: 20px 0; }
-    .content .obtener_credito form .value_block input#price_depa {
+    .content .obtener_credito form .value_block label {
+      width: 100%; }
+    .content .obtener_credito form .value_block label.tandc {
+      width: auto; }
+    .content .obtener_credito form .value_block input[type='text'] {
       border: none;
       border-bottom: 1px solid #0871B8;
       color: #0871B8;
       width: 70%; }
+    .content .obtener_credito form .value_block span {
+      color: #0071BC; }
     .content .obtener_credito form .value_block .btn-group {
       display: flex; }
       .content .obtener_credito form .value_block .btn-group label {
         margin: 0 10px; }
+    .content .obtener_credito form .value_block .tasas input {
+      margin: 20px auto;
+      display: table; }
+    .content .obtener_credito form .value_block .tasas label {
+      color: #0071BC;
+      text-align: center;
+      font-weight: 500; }
+.content .obtener_credito form.w-90 {
+  width: 90%; }
 
 #programar_cita .modal-content {
   background-color: #ff0000c7;
