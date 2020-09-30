@@ -199,6 +199,9 @@ header {
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
             transition: all .3s ease;
+            .card-body {
+                display: none;
+            }
             .card-bottom {
                 background-color: red;
                 padding: 10px;
@@ -212,6 +215,11 @@ header {
             &:hover {
                 transition: all .3s ease;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+        }
+        .card.d_block {
+            .card-body {
+                display: block;
             }
         }
     }
@@ -246,6 +254,9 @@ header {
                         margin: 0 10px;
                     }
                 }
+                .range_values {
+                    padding: 0 10px;
+                }
                 .tasas {
                     input {
                         margin: 20px auto;
@@ -256,11 +267,45 @@ header {
                         text-align: center;
                         font-weight: 500;
                     }
+                    p {
+                        color: black;
+                        text-align: justify;
+                    }
                 }
+                .custom-range::-webkit-slider-thumb {
+                    background: $color_red;
+                }
+                .custom-range::-moz-range-thumb {
+                    background: $color_red;
+                }
+                .custom-range::-ms-thumb {
+                    background: $color_red;
+                    height: 10px;
+                }
+                .custom-range::-webkit-slider-runnable-track {
+                    background-color: #e64b55;
+                }
+                .custom-range::-moz-range-track {
+                    background-color: #e64b55;
+                }
+                .custom-range::-ms-track {
+                    background-color: #e64b55;
+                }
+            }
+            .contactar_asesor {
+                background-color: #ff0000;
+                color: white;
+                border-radius: 15px;
+                padding: 15px;
+                width: 100%;
+                border: none;
             }
         }
         form.w-90 {
             width: 90%;
+        }
+        form.w-100 {
+            width: 100%;
         }
     }
 }
@@ -343,6 +388,9 @@ header {
         .obtener_credito {
             form {
                 width: 70%;
+                .contactar_asesor {
+                    width: auto;
+                }
             }
         }
     }

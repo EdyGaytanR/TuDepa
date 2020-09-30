@@ -28,7 +28,7 @@
 <body>
     <div class="container" id="main-content">
         <header>
-            <nav class="navbar navbar-expand-lg absolute">
+            <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">tudepa.com</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartudepa" aria-controls="navbartudepa" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
 
@@ -368,5 +368,10 @@
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $('.card').hover(function() {
+        $(this).toggleClass('d_block');
+    })
+</script>
 
 </html>

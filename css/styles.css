@@ -138,6 +138,8 @@ header nav.absolute {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: all .3s ease; }
+  .content .item_depa .card .card-body {
+    display: none; }
   .content .item_depa .card .card-bottom {
     background-color: red;
     padding: 10px;
@@ -150,6 +152,8 @@ header nav.absolute {
   .content .item_depa .card:hover {
     transition: all .3s ease;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+.content .item_depa .card.d_block .card-body {
+  display: block; }
 .content .carousel-indicators {
   margin-bottom: 0; }
 .content .obtener_credito form {
@@ -173,6 +177,8 @@ header nav.absolute {
       display: flex; }
       .content .obtener_credito form .value_block .btn-group label {
         margin: 0 10px; }
+    .content .obtener_credito form .value_block .range_values {
+      padding: 0 10px; }
     .content .obtener_credito form .value_block .tasas input {
       margin: 20px auto;
       display: table; }
@@ -180,8 +186,33 @@ header nav.absolute {
       color: #0071BC;
       text-align: center;
       font-weight: 500; }
+    .content .obtener_credito form .value_block .tasas p {
+      color: black;
+      text-align: justify; }
+    .content .obtener_credito form .value_block .custom-range::-webkit-slider-thumb {
+      background: red; }
+    .content .obtener_credito form .value_block .custom-range::-moz-range-thumb {
+      background: red; }
+    .content .obtener_credito form .value_block .custom-range::-ms-thumb {
+      background: red;
+      height: 10px; }
+    .content .obtener_credito form .value_block .custom-range::-webkit-slider-runnable-track {
+      background-color: #e64b55; }
+    .content .obtener_credito form .value_block .custom-range::-moz-range-track {
+      background-color: #e64b55; }
+    .content .obtener_credito form .value_block .custom-range::-ms-track {
+      background-color: #e64b55; }
+  .content .obtener_credito form .contactar_asesor {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    border: none; }
 .content .obtener_credito form.w-90 {
   width: 90%; }
+.content .obtener_credito form.w-100 {
+  width: 100%; }
 
 #programar_cita .modal-content {
   background-color: #ff0000c7;
@@ -222,7 +253,9 @@ header nav.absolute {
     font-size: 25px;
     margin: 0 5px; }
   .content .obtener_credito form {
-    width: 70%; } }
+    width: 70%; }
+    .content .obtener_credito form .contactar_asesor {
+      width: auto; } }
 @media (max-width: 768px) {
   header nav #navbartudepa form {
     width: 100%;
